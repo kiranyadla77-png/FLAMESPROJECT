@@ -6,7 +6,9 @@ inputClass.forEach((input) =>{
         calculation.classList.remove('disable');
         document.getElementById("name1Error").innerHTML="⚠Enter name without (spaces,specialCharacters and digits(0-9))";
         document.getElementById("name2Error").innerHTML="⚠Enter name without (spaces,specialCharacters and digits(0-9))";
-
+        document.getElementById("imageforresult").innerHTML="";
+        document.getElementById("result").innerHTML="";
+        document.getElementById("details").innerHTML="";
     });
 });
 
