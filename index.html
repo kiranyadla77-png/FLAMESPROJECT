@@ -67,11 +67,7 @@
         margin-left: 30px;
         font-size: 12px;
       }
-      #remaining,
-      #remainingpartner {
-        margin: 0px;
-        margin-left: 30px;
-      }
+
       .disable {
         cursor: default;
         opacity: 0.5;
@@ -81,14 +77,9 @@
         margin-left: 100px;
         width: 100px;
       }
-      .NameDetails {
-        margin-left: 40px;
-        color: rgb(255, 255, 255);
-
-        transition: font-size 0.4s;
-      }
-      .NameDetails:hover {
-        font-size: 20px;
+      #details {
+        color: white;
+        margin-left: 30px;
       }
     </style>
   </head>
@@ -97,11 +88,12 @@
       <p class="Heading">FLAMES</p>
       <p class="text">YourName :</p>
       <input class="YourName" id="YourName" placeholder="Enter name" required />
-      <p id="name1Error" style="color: red">
+      <p id="name1Error" style="color: rgb(248, 81, 81)">
         ⚠Enter name without (spaces,specialCharacters and digits(0-9))
       </p>
       <p class="text">PartnerName :</p>
-      <input style="margin-right: 30px;"
+      <input
+        style="margin-right: 30px"
         class="YourPartnerName"
         id="YourPartnerName"
         placeholder="Enter partner name"
@@ -110,21 +102,9 @@
       <p id="name2Error" style="color: red">
         ⚠Enter name without (spaces,specialCharacters and digits(0-9))
       </p>
+
       <p id="details"></p>
-      <p
-        id="remaining"
-        style="
-          color: white;
-          font-size: 18px;
-          font-weight: bold;
-          margin-top: 20px;
-          margin-bottom: 5px;
-        "
-      ></p>
-      <p
-        id="remainingpartner"
-        style="color: white; font-size: 16px; font-weight: bold"
-      ></p>
+
       <p id="imageforresult"></p>
       <p
         id="result"
