@@ -9,6 +9,8 @@ inputClass.forEach((input) =>{
         document.getElementById("imageforresult").innerHTML="";
         document.getElementById("result").innerHTML="";
         document.getElementById("details").innerHTML="";
+            document.getElementById("alert-box").innerHTML = "";
+
     });
 });
 
@@ -63,23 +65,14 @@ calculation.addEventListener("click", () => {
             }
         }
     }
-    document.getElementById("details").innerHTML='<a href="#" class="NameDetails">details</a>'
-    const NameDetails = document.querySelector(".NameDetails");
-
-let RemainingLetters = "";
-    for( let i = 0; i < arr1.length; i++){
-         RemainingLetters += arr1[i];
-    }
-
-   let RemainingLettersPartner = ""
-    for( let i = 0; i < arr2.length; i++){
-        RemainingLettersPartner += arr2[i];
-   }
-
-NameDetails.addEventListener("click",() =>{
     
-    alert(`Remaining Letters in Your Name : ${RemainingLetters}\nRemaining Letters in Partnner Name : ${RemainingLettersPartner}`);
-});
+    let RemainingLettersInyourName = "";
+    let RemainingLettersInYourPartnerName = "";
+    RemainingLettersInyourName = arr1;
+    RemainingLettersInYourPartnerName = arr2;
+    
+    let popupcontent = `<strong style=" display: block; font-size : 20px; text-align:center">RemainingLetters</strong>${name1} : ${RemainingLettersInyourName}<br>${name2} : ${RemainingLettersInYourPartnerName}`;
+    document.getElementById("details").innerHTML = popupcontent;
     
     let count = arr1.length + arr2.length;
 
@@ -135,4 +128,9 @@ NameDetails.addEventListener("click",() =>{
     document.getElementById("result").innerHTML = result;
 
 });
+
+
+
+   
+
 
